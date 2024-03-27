@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Details</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tourism Details</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Destination</th>
+            <th>Date</th>
+            <th>Duration</th>
+            <th>People</th>
+            <th>Budget</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.destination }}</td>
+            <td>{{ item.date }}</td>
+            <td>{{ item.duration }}</td>
+            <td>{{ item.people }}</td>
+            <td>{{ item.budget }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

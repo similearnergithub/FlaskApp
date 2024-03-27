@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-image: url('/static/1866585.jpg'); /* Specify the path to your image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+            animation: gradientChange 80s infinite alternate;
+        }
+        @keyframes gradientChange {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        h1 {
+            color: black;
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 20vh;
+        }
+        .container {
+            color: grey;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 5vh;
+            height: 700vh; /* Optionally, to center vertically */
+            width: 100vw;
+        }
+        
+        /* Custom button style */
+        button {
+            background-color: transparent; /* Transparent background */
+            border: 2px solid black; /* Black border */
+            color: black; /* Text color */
+            font-size: 1.5rem; /* Font size */
+            padding: 10px 20px; /* Increase padding */
+            cursor: pointer; /* Add pointer cursor on hover */
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Simran Rai's portfolio</h1>
+    <!-- Other portfolio content goes here -->
+    <div class="container">
+        <a href="/first"><button>Home page</button></a>
+    </div>
+    
+</body>
+</html>
